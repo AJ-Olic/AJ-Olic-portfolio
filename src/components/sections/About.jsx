@@ -2,147 +2,41 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
     
-    const frontendSkills = ["React", "TailwindCSS", "Vite", "JavaScript"]
-    const backendSkills = ["Python", "Go", "Java", "Huma", "FastAPI", "AWS", "Azure", "Cloud Deployment",]
-    const aiSkills = ["Python", "LangChain", "LangGraph", "PyTorch", "RAG Pipeline", "Classification", "Regression"]
-    const devtoolSkills = ["Github + Gitlab", "VS Code", "CI/CD", "Docker", "Harbor", "Kubernetes"]
+    const skills = ["Go", "Python", "Java", "Azure", "Docker", "LangGraph", "Kubernetes"];
 
     return (
         <section 
             id="about" 
-            className="min-h-screen flex items-center justify-center py-20">
+            className="py-20">
           
-            <div className="max-w-4xl mx-auto px-4">
+            <div className="max-w-3xl mx-auto px-4">
                 <RevealOnScroll delay={0}>
-                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent text-center"> 
+                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"> 
                         About Me
                     </h2>
                 </RevealOnScroll>
 
-                <RevealOnScroll delay={100}>
-                    <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-                    <p className="text-gray-300 mb-6">
-                    I’m Ryan Mahshie, a computer science student at Northeastern University concentrating in AI. 
-                    I’m passionate about backend development, focusing on building systems that keep services 
-                    connected and data consistent. My experience includes backend infrastructure spanning AWS 
-                    and Azure as well as AI-driven projects such as RAG pipelines and research agents. I am 
-                    committed to continually growing as an engineer and taking on meaningful challenges.
+                <RevealOnScroll delay={50}>
+                    <p className="text-gray-300 mb-6 leading-relaxed">
+                        I'm a computer science student at Northeastern University with an AI concentration and a 3.91 GPA. 
+                        I have about a year of real backend engineering experience across different industries and company sizes—not 
+                        typical intern work, but as a major contributor shipping production code.
                     </p>
-                
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> Backend</h3>
-                            <div className="flex flex-wrap gap-2">
-                                {backendSkills.map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
-                                    >
-                                       {tech} 
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> AI/ML</h3>
-                            <div className="flex flex-wrap gap-2">
-                                {aiSkills.map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
-                                    >
-                                       {tech} 
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> Frontend</h3>
-                            <div className="flex flex-wrap gap-2">
-                                {frontendSkills.map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
-                                    >
-                                       {tech} 
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> Developer Tools</h3>
-                            <div className="flex flex-wrap gap-2">
-                                {devtoolSkills.map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
-                                    >
-                                       {tech} 
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </RevealOnScroll>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                    <RevealOnScroll delay={200}>
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all h-full">
-                            <h3 className="text-xl font-bold mb-4">
-                            🏫 Education
-                            </h3>
-                            <div className="space-y-4 text-gray-300">
-                                <div>
-                                    <h4 className="font-semibold">B.S in Computer Science + AI Concentration - Northeastern University</h4>
-                                    <p className="text-sm text-gray-400 mb-1">(2023 - 2027)</p>
-                                    <p className="ml-4">• Relevant Coursework: Object Oriented Design, Data Structures and Algorithms, Artificial Intelligence</p>
-                                </div>
-                            </div>
-                        </div>
-                    </RevealOnScroll>
-                    <RevealOnScroll delay={300}>
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all h-full">
-                            <h3 className="text-xl font-bold mb-4">
-                            💼 Experience
-                            </h3>
-                            <div className="space-y-4 text-gray-300">
-                                <div>
-                                    <h4 className="font-semibold"> Software Engineering Co-op at <a href="https://www.linkedin.com/company/opscanvas/" target="_blank" rel="noopener noreferrer" className="text-inherit hover:text-purple-500 no-underline cursor-pointer transition-colors">OpsCanvas</a></h4>
-                                    <p className="text-sm text-gray-400 mb-1">(Jul. 2025 - Dec. 2025)</p>
-                                    <p className="ml-4">• Co-op working on AWS and Azure cloud monitoring software. Primarily working with Go, Python, Microsoft Bicep.</p>
-                                </div>
-
-                                <div>
-                                    <h4 className="font-semibold"> AI Software Engineering Intern at <a href="https://www.linkedin.com/company/pelagicai/" target="_blank" rel="noopener noreferrer" className="text-inherit hover:text-purple-500 no-underline cursor-pointer transition-colors">Pelagic AI</a></h4>
-                                    <p className="text-sm text-gray-400 mb-1">(Jun. 2025 - Jul. 2025)</p>
-                                    <p className="ml-4">• Engineered an AI-driven satellite simulation with autonomous agents, GraphX-based airport modeling, and Model Context Protocol integration for geospatial reasoning.</p>
-                                </div>
-                                
-                                <div>
-                                    <h4 className="font-semibold"> Software Engineering Intern at OPEXUS</h4>
-                                    <p className="text-sm text-gray-400 mb-1">(Jun. 2024 - Sep. 2024)</p>
-                                    <p className="ml-4">• Developed SQL mapping scripts and supported large-scale data migrations 
-                                        for legacy system transitions in public sector software.</p>
-                                </div>
-
-                                <div>
-                                    <h4 className="font-semibold"> Information Technology Volunteer at <a href="https://www.ceoforthepeople.org/home" target="_blank" rel="noopener noreferrer" className="text-inherit hover:text-purple-500 no-underline cursor-pointer transition-colors">CEO</a></h4>
-                                    <p className="text-sm text-gray-400 mb-1">(Dec. 2023 - Jun. 2024)</p>
-                                    <p className="ml-4">•
-                                    Migrated web content from a legacy CMS to Google Sites and integrated donation 
-                                    and planning tools, improving accessibility and helping raise over $5,000 in online contributions.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </RevealOnScroll>
-                </div>
+                <RevealOnScroll delay={100}>
+                    <div className="flex flex-wrap gap-2">
+                        {skills.map((tech, key) => (
+                            <span 
+                                key={key}
+                                className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
+                                                hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
+                            >
+                               {tech} 
+                            </span>
+                        ))}
+                    </div>
+                </RevealOnScroll>
             </div>
           
         </section>

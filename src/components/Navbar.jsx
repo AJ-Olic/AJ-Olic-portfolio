@@ -8,7 +8,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
     }, [menuOpen]);
 
     useEffect(() => {
-        const sections = ["home", "about", "projects", "contact"];
+        const sections = ["home", "about", "experience", "projects"];
         
         const handleScroll = () => {
             let currentSection = "home";
@@ -39,8 +39,8 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
     const navLinks = [
         { id: "home", label: "Home" },
         { id: "about", label: "About" },
-        { id: "projects", label: "Projects" },
-        { id: "contact", label: "Contact" }
+        { id: "experience", label: "Experience" },
+        { id: "projects", label: "Projects" }
     ];
 
     return (
