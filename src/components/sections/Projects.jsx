@@ -18,18 +18,48 @@ export const Projects = () => {
         };
     }, []);
 
-    
-    
-    // Google Drive embed URL conversion
-    // Convert from: https://drive.google.com/file/d/1EsUQjmiFeGlnH7900i08dRjaDtF6015u/view?t=14
-    // To: https://drive.google.com/file/d/1EsUQjmiFeGlnH7900i08dRjaDtF6015u/preview
-    const videoId = "1EsUQjmiFeGlnH7900i08dRjaDtF6015u";
-    const embedUrl = `https://drive.google.com/file/d/${videoId}/preview`;
+    const projects = [
+        {
+            name: "LawSearch AI",
+            description: "An AI-powered tool built for a lobbyist client to search federal spending bills. Parses 2,000+ page bills into 14 specialized vector stores by committee, routes queries via LLM, and combines results through RAG map-reduce. Built pre-MCP, pre-evals - I tuned retrieval parameters through manual testing. Reduced response time from 3 minutes to 30 seconds and cut research time by 90%.",
+            tech: ["Python", "LangChain", "LangGraph", "ChromaDB", "requests", "ChatGPT API", "Congressional API"],
+            links: [
+                { label: "GitHub", url: "https://github.com/RMahshie/lawsearchprod" },
+            ],
+            hasDemo: true
+        },
+        {
+            name: "Sonara",
+            description: "A room acoustics analyzer for improving speaker setups and sound treatment. Play a sine sweep through your speakers, record with a USB mic, and get your room's frequency response with calculated room modes. Uses sweep deconvolution and fractional octave smoothing for accurate measurements. Built with Go and goroutines for audio processing, deployed on Railway with Docker.",
+            tech: ["Go", "Python", "Huma", "PostgreSQL", "Docker", "WebRTC", "AWS", "React"],
+            links: [
+                { label: "GitHub", url: "https://github.com/RMahshie/sonara" },
+                { label: "Try It Out", url: "https://sonara.up.railway.app/" },
+            ],
+            hasDemo: false
+        },
+        {
+            name: "Nitpick",
+            description: "A GitHub Action that provides AI-powered code reviews on pull requests, automatically routing between lightweight reviews for simple changes and agentic reviews for complex cross-file modifications that trace code flow and dependencies.",
+            tech: ["Claude Agent SDK", "LangChain", "OpenAI API", "GitHub Actions", "Pydantic", "Python"],
+            links: [
+                { label: "GitHub", url: "https://github.com/RMahshie/codereviewer" },
+            ],
+            hasDemo: false
+        },
+        {
+            name: "This Website",
+            description: "I'm not a frontend engineer, but I built this site to showcase my work. It's a simple React app with Tailwind CSS, deployed on GitHub Pages.",
+            tech: ["React", "Tailwind CSS"],
+            links: [],
+            hasDemo: false
+        }
+    ];
     
     return (
         <section 
             id="projects" 
-            className="min-h-screen flex items-center py-20"
+            className="py-20"
         >
             {/* Video Modal */}
             {showVideoModal && (
@@ -64,222 +94,60 @@ export const Projects = () => {
                 </div>
             )}
           
-            <div className="max-w-5xl mx-auto px-4">
+            <div className="max-w-3xl mx-auto px-4">
                 <RevealOnScroll delay={0}>
-                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent text-center"> 
-                        {" "}
-                        Featured Projects
+                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"> 
+                        Projects
                     </h2>
                 </RevealOnScroll>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                    <RevealOnScroll delay={100}>
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-500/30 
-                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all h-full">
-                            <h3 className="text-xl font-bold mb-2"> LawSearch AI </h3>
-                            <p className="text-gray-400 mb-4">
-                                An AI-powered question-answering system that uses 
-                                a dynamic RAG pipeline to retrieve and summarize key information 
-                                from U.S. legislative documents. Powered by ChatGPT and LangChain
-                                and deployed by Docker.
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                {["Python", "LangChain", "LangGraph", "ChromaDB", "requests", "ChatGPT API", "Congressional API"].map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                    hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition-all"
-                                    >
-                                        {tech} 
-                                    </span>
-                                ))}
+                <div className="space-y-0">
+                    {projects.map((project, index) => (
+                        <RevealOnScroll key={index} delay={50 + index * 50}>
+                            <div className={`py-6 ${index !== 0 ? 'border-t border-gray-800' : ''}`}>
+                                <div className="flex justify-between items-start mb-3">
+                                    <h3 className="text-xl font-bold text-white">{project.name}</h3>
+                                    <div className="flex gap-3">
+                                        {project.links.map((link, linkIndex) => (
+                                            <a 
+                                                key={linkIndex}
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn-interactive text-purple-400"
+                                            > 
+                                                {link.label} <span className="arrow">→</span>
+                                            </a>
+                                        ))}
+                                        {project.hasDemo && (
+                                            <button 
+                                                onClick={() => setShowVideoModal(true)}
+                                                className="btn-interactive text-purple-400 cursor-pointer"
+                                            > 
+                                                Watch Demo <span className="arrow">→</span>
+                                            </button>
+                                        )}
+                                    </div>
+                                </div>
+                                
+                                <p className="text-gray-300 mb-4 leading-relaxed">
+                                    {project.description}
+                                </p>
+                                
+                                <div className="flex flex-wrap gap-2">
+                                    {project.tech.map((tech, techIndex) => (
+                                        <span 
+                                            key={techIndex}
+                                            className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
+                                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition-all"
+                                        >
+                                            {tech} 
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
-
-                            <div className="flex justify-start gap-4 items-center mt-auto pt-2">
-                                <a 
-                                    href="https://github.com/RMahshie/lawsearchprod" 
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn-interactive text-purple-400"
-                                > 
-                                    View Project <span className="arrow">→</span>
-                                </a>
-                                <button 
-                                    onClick={() => setShowVideoModal(true)}
-                                    className="btn-interactive text-purple-400 cursor-pointer"
-                                > 
-                                    Watch Demo <span className="arrow">→</span>
-                                </button>
-                            </div>
-                        </div>
-                    </RevealOnScroll>
-
-                    <RevealOnScroll delay={200}>
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-500/30 
-                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all h-full">
-                            <h3 className="text-xl font-bold mb-2"> Sonara </h3>
-                            <p className="text-gray-400 mb-4">
-                            An acoustic analysis platform built with Go backend orchestrating containerized 
-                            Python audio processing to measure room frequency response through consumer USB 
-                            microphones. Features OpenAPI architecture with Huma framework, PostgreSQL, and 
-                            intelligent processing that combines FFT analysis with physics-based room mode predictions.
-                        
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                {["Go", "Python", "Huma", "PostgreSQL", "Docker", "WebRTC", "AWS", "React"].map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                    hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition-all"
-                                    >
-                                        {tech} 
-                                    </span>
-                                ))}
-                            </div>
-
-                            <div className="flex justify-between items-center mt-auto pt-2">
-                                <a 
-                                    href="https://sonara.up.railway.app/"
-                                    target="_blank"
-                                    rel="noopener noreferrer" 
-                                    className="btn-interactive text-purple-400"
-                                > 
-                                    Try It Out <span className="arrow">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </RevealOnScroll>
-                    
-                    <RevealOnScroll delay={300}>
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-500/30 
-                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all h-full">
-                            <h3 className="text-xl font-bold mb-2"> Nitpick </h3>
-                            <p className="text-gray-400 mb-4">
-                            A GitHub Action that provides AI-powered code reviews on pull requests, automatically 
-                            routing between lightweight reviews for simple changes and agentic reviews for complex 
-                            cross-file modifications that trace code flow and dependencies.                       
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                {["Claude Agent SDK", "LangChain", "OpenAI API", "GitHub Actions", "Pydantic", "Python"].map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                    hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition-all"
-                                    >
-                                        {tech} 
-                                    </span>
-                                ))}
-                            </div>
-                            
-                            <div className="flex justify-between items-center mt-auto pt-2">
-                                <a 
-                                    href="https://github.com/RMahshie/codereviewer"
-                                    target="_blank"
-                                    rel="noopener noreferrer" 
-                                    className="btn-interactive text-purple-400"
-                                > 
-                                    Try It Out <span className="arrow">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </RevealOnScroll>
-
-                    <RevealOnScroll delay={400}>
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-500/30 
-                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all h-full">
-                            <h3 className="text-xl font-bold mb-2"> MacOS ZSH Shell </h3>
-                            <p className="text-gray-400 mb-4">
-                                A custom Unix shell built in C, featuring a deterministic finite 
-                                automaton tokenizer, along with support for command parsing, piping, 
-                                file redirection, and built-in shell commands.                        
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                {["C", "Unix", "Git", "GCC/Make", "Bash/ZSH", "Valgrind"].map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                    hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition-all"
-                                    >
-                                        {tech} 
-                                    </span>
-                                ))}
-                            </div>
-
-                            <div className="flex justify-between items-center mt-auto pt-2">
-                                <a 
-                                    href="https://github.com/RMahshie/MacOS-ZSH-Shell"
-                                    target="_blank"
-                                    rel="noopener noreferrer" 
-                                    className="btn-interactive text-purple-400"
-                                > 
-                                    View Project <span className="arrow">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </RevealOnScroll>
-
-                    <RevealOnScroll delay={500}>
-                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-500/30 
-                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all h-full">
-                            <h3 className="text-xl font-bold mb-2"> This Website </h3>
-                            <p className="text-gray-400 mb-4">
-                                I made this website to be a portfolio of my work and way to explore Frontend programming.                       
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                                {["JavaScript", "React", "Tailwind CSS", "Vite", "GitHub Pages", "Static Hosting", "Custom Domain"].map((tech, key) => (
-                                    <span 
-                                        key={key}
-                                        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                    hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition-all"
-                                    >
-                                        {tech} 
-                                    </span>
-                                ))}
-                            </div>
-                            {/*
-                            <div className="flex justify-between items-center">
-                                <a 
-                                    href="#" 
-                                    className="text-purple-400 hover:text-purple 300 transition-colors my-5"
-                                > 
-                                    View Project →</a>
-                            </div>
-                                */}
-                        </div>
-                    </RevealOnScroll>
-
-                    {/* <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-500/30 
-                                    hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.1)] transition-all">
-                        <h3 className="text-xl font-bold mb-2"> What's Next... </h3>
-                        <p className="text-gray-400 mb-4">
-                            I'm working on building a workout tracker app for my phone. I currently pay for an easy
-                            to use app, and I'd like to have my own that is free and my friends can use as well.                       
-                        </p>
-                        <div className="flex flex-wrap gap-2 mb-4">
-                            {[].map((tech, key) => (
-                                <span 
-                                    key={key}
-                                    className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition-all"
-                                >
-                                    {tech} 
-                                </span>
-                            ))}
-                        </div> */}
-                        {/*
-                        <div className="flex justify-between items-center">
-                            <a 
-                                href="#" 
-                                className="text-purple-400 hover:text-purple 300 transition-colors my-5"
-                            > 
-                                View Project →</a>
-                        </div>
-                        /}
-                    </div> */}
-
-
-
-
+                        </RevealOnScroll>
+                    ))}
                 </div>
             </div>
           
