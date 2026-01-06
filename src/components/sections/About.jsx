@@ -18,9 +18,9 @@ export const About = () => {
 
                 <RevealOnScroll delay={50}>
                     <p className="text-gray-300 mb-6 leading-relaxed">
-                        I'm a computer science student at Northeastern University with an AI concentration and a 3.91 GPA. 
-                        I have about a year of real backend engineering experience across different industries and company sizes—not 
-                        typical intern work, but as a major contributor shipping production code.
+                    I'm a computer science student at Northeastern University with an AI concentration and a 3.91 GPA. 
+                    Over the past year, I've worked as a backend engineer across different industries and company sizes, 
+                    owning features and shipping production code.
                     </p>
                 </RevealOnScroll>
 
