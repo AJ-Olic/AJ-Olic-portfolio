@@ -20,7 +20,9 @@ export const About = () => {
                     <p className="text-gray-300 mb-6 leading-relaxed">
                     I'm a computer science student at Northeastern University with an AI concentration and a 3.91 GPA. 
                     Over the past year, I've worked as a backend engineer across different industries and company sizes, 
-                    owning features and shipping production code.
+                    owning features and shipping production code. I work primarily in Go and Python, with experience across 
+                    AWS and deep work in Azure infrastructure. I've also been building with agentic AI frameworks since 
+                    before the tooling matured.
                     </p>
                 </RevealOnScroll>
 
