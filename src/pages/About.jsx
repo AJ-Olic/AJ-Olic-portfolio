@@ -15,11 +15,23 @@ const AboutPage = () => {
                 </RevealOnScroll>
 
                 <RevealOnScroll delay={50}>
-                    <div className="text-[#1a3a52]/80 mb-6 leading-relaxed space-y-4">
-                        <p>I'm a third-year mechanical engineering student at Northeastern University (graduating May 2027) with a minor in aerospace engineering (GPA: 3.65, Dean's List, National Merit Commended Scholar). As a Northeastern Global Scholar, I studied abroad in London and completed an intensive aerospace program in Seattle. My coursework spans CFD, heat transfer, fluid mechanics, thermodynamics, and aeronautical propulsion—complemented by hands-on experience in SolidWorks, ANSYS Fluent, AutoCAD, MATLAB, and C++.</p>
-                        <p>Most recently, I completed a co-op at MPR Associates, a nuclear engineering consultancy, where I conducted system vulnerability reviews analyzing 10+ years of plant data, designed issue-tracking systems using GitLab, and verified engineering calculations for seismic analysis and structural loads. Prior internships at Summit Engineers and Stantec gave me experience in electrical system design and architectural engineering.</p>
-                        <p>My project experience includes leading CFD analysis of supersonic rivet deformation on Concorde-style airfoils, building RC aircraft from scratch with Northeastern's Fixed Wing club, and designing an autonomous temperature sensor using Arduino and C++. In high school, I founded and led the Engineering Club at Yorktown HS to support STEM students and spark interest in engineering.</p>
-                        <p>Beyond engineering, I've traveled to 60 countries across 6 continents, am a PADI-certified Open Water SCUBA diver, serve as a USSF-certified soccer referee, and have coached youth soccer teams. I bring the same teamwork, quick decision-making, and leadership to my engineering work.</p>
+                    <div className="flex flex-col md:flex-row gap-8 mb-8">
+                        <div className="md:w-1/3 flex justify-center">
+                            <div className="w-full max-w-xs">
+                                <img 
+                                    src="/Pictures/Tesla.jpg" 
+                                    alt="AJ with Nikola Tesla statue" 
+                                    className="w-full rounded-lg shadow-lg border-2 border-[#0d5a2d]/20"
+                                />
+                                <p className="text-center text-sm text-[#1a3a52]/60 mt-2 italic">With Nikola Tesla in Belgrade, Serbia</p>
+                            </div>
+                        </div>
+                        <div className="md:w-2/3 text-[#1a3a52]/80 leading-relaxed space-y-4">
+                            <p>I'm a third-year mechanical engineering student at Northeastern University (graduating May 2027) with a minor in aerospace engineering (GPA: 3.65, Dean's List, National Merit Commended Scholar). As a Northeastern Global Scholar, I studied abroad in London and completed an intensive aerospace program in Seattle. My coursework spans CFD, heat transfer, fluid mechanics, thermodynamics, and aeronautical propulsion—complemented by hands-on experience in SolidWorks, ANSYS Fluent, AutoCAD, MATLAB, and C++.</p>
+                            <p>Most recently, I completed a co-op at MPR Associates, a nuclear engineering consultancy, where I conducted system vulnerability reviews analyzing 10+ years of plant data, designed issue-tracking systems using GitLab, and verified engineering calculations for seismic analysis and structural loads. Prior internships at Summit Engineers and Stantec gave me experience in electrical system design and architectural engineering.</p>
+                            <p>My project experience includes leading CFD analysis of supersonic rivet deformation on Concorde-style airfoils, building RC aircraft from scratch with Northeastern's Fixed Wing club, and designing an autonomous temperature sensor using Arduino and C++. In high school, I founded and led the Engineering Club at Yorktown HS to support STEM students and spark interest in engineering.</p>
+                            <p>Beyond engineering, I've traveled to 60 countries across 6 continents, am a PADI-certified Open Water SCUBA diver, serve as a USSF-certified soccer referee, and have coached youth soccer teams. I bring the same teamwork, quick decision-making, and leadership to my engineering work.</p>
+                        </div>
                     </div>
                 </RevealOnScroll>
 
