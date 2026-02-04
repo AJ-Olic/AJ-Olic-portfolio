@@ -119,7 +119,7 @@ const ProjectDetail = () => {
                     </div>
                 )}
 
-                <div className="mt-8">
+                <div className="mt-8 clear-both">
                     <Link to="/projects" className="inline-block bg-[#0d5a2d] text-[#f5f1e8] py-2 px-4 rounded">Back</Link>
                 </div>
             </div>
