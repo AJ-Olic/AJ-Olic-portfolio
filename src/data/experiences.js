@@ -35,7 +35,7 @@ export const experiences = [
         companyUrl: null,
         title: "USSF Certified Referee (Metro DC-Virginia)",
         dates: "Apr 2017 - Present",
-        description: `USSF-certified referee officiating at the highest levels of youth soccer in the Mid-Atlantic region. Assigned to competitive travel leagues, Virginia State Cup semifinal matches, and MLS academy games. Lead 3-man referee crews (including adult officials) across Virginia, Maryland, and DC. Developed strong skills in leadership, conflict resolution, and split-second decision-making under pressure—skills that translate directly to high-stakes engineering environments.`,
+        description: `USSF-certified referee with 106+ games officiated at the highest levels of youth soccer in the Mid-Atlantic region. Assigned to competitive travel leagues, Virginia State Cup semifinal matches, and MLS academy games. Lead 3-man referee crews (including adult officials) across Virginia, Maryland, and DC. Developed strong skills in leadership, conflict resolution, and split-second decision-making under pressure—skills that translate directly to high-stakes engineering environments.`,
         tech: ["Leadership", "Team Management", "Decision Making", "Conflict Resolution", "Communication"],
         image: null
     }
