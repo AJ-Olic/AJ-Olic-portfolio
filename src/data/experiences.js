@@ -14,7 +14,7 @@ export const experiences = [
         companyUrl: null,
         title: "Electrical Engineering Intern",
         dates: "Summer 2022 - Summer 2024",
-        description: `Marked up and revised electrical plans using VectorWorks and AutoCAD. Designed lighting and electrical plans for large projects and calculated circuit load requirements from reflected ceiling plans. Selected for the APS PRIME internship program—a competitive program for the top 30 gifted 10th/11th graders placed in professional organizations. One of few students selected for a second consecutive year.`,
+        description: `Interned at Summit Engineers, a mechanical, electrical, and plumbing (MEP) engineering consulting firm in Arlington, Virginia serving building owners, developers, architects, and government organizations. Marked up and revised electrical plans using VectorWorks and AutoCAD. Designed lighting and electrical plans for large projects and calculated circuit load requirements from reflected ceiling plans. Selected through the APS PRIME program—a competitive internship for the top 30 gifted 10th/11th graders. One of few students chosen twice, enabling both this role and my earlier Stantec internship.`,
         image: null
     },
     {
@@ -23,7 +23,7 @@ export const experiences = [
         companyUrl: null,
         title: "Architecture Intern",
         dates: "Summer 2021",
-        description: `Interned at Stantec, an international architecture and design firm with 26,000 employees across 400+ locations on 6 continents. Worked in the Architecture group focused on sustainable school design. Created sunlight renderings for a middle school project using SketchUp and Sefaira to optimize natural lighting and energy efficiency. Presented design findings in team meetings to senior management and participated in on-site visits. Selected for the APS PRIME internship program through a competitive application process including essays, resume review, and multiple interview rounds.`,
+        description: `Interned at Stantec, an international architecture and design firm with 26,000 employees across 400+ locations on 6 continents. Worked in the Architecture group focused on sustainable school design. Created sunlight renderings for a middle school project using SketchUp and Sefaira to optimize natural lighting and energy efficiency. Presented design findings in team meetings to senior management and participated in on-site visits. Selected through the APS PRIME program via a competitive application process including essays, resume review, and multiple interview rounds.`,
         image: null
     }
 ];
