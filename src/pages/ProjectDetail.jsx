@@ -87,15 +87,15 @@ const ProjectDetail = () => {
                 )}
 
                 {project.slides && project.slides.length > 0 && (
-                    <div className="mt-8 space-y-6">
+                    <div className="mt-8 space-y-8">
                         {project.slides.map((slide, slideIdx) => (
-                            <div key={slideIdx}>
+                            <div key={slideIdx} className="clear-both">
                                 <h3 className="text-2xl font-bold mb-3 text-[#0d5a2d]">{slide.title}</h3>
-                                <div className="space-y-4">
+                                <div>
                                     {slide.content.map((block, blockIdx) => (
-                                        <div key={blockIdx} className={`flex flex-col md:flex-row gap-4 items-start ${blockIdx % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+                                        <div key={blockIdx} className="mb-4">
                                             {(block.image || block.mapKey) && (
-                                                <div className="flex-shrink-0 w-full md:w-2/5">
+                                                <div className={`w-full sm:w-2/5 mb-3 sm:mb-2 ${blockIdx % 2 === 0 ? 'sm:float-left sm:mr-4' : 'sm:float-right sm:ml-4'}`}>
                                                     {block.mapKey ? (
                                                         <MapKeyLegend />
                                                     ) : (
@@ -109,12 +109,11 @@ const ProjectDetail = () => {
                                                 </div>
                                             )}
                                             {block.text && (
-                                                <div className={`flex-grow ${(block.image || block.mapKey) ? 'md:w-3/5' : 'w-full'}`}>
-                                                    <p className="text-[#1a3a52]/80 leading-relaxed">{block.text}</p>
-                                                </div>
+                                                <p className="text-[#1a3a52]/80 leading-relaxed">{block.text}</p>
                                             )}
                                         </div>
                                     ))}
+                                    <div className="clear-both"></div>
                                 </div>
                             </div>
                         ))}
