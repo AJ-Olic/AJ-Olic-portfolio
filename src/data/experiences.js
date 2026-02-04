@@ -25,5 +25,14 @@ export const experiences = [
         dates: "Summer 2021",
         description: `Interned at Stantec, an international architecture and design firm with 26,000 employees across 400+ locations on 6 continents. Worked in the Architecture group focused on sustainable school design. Created sunlight renderings for a middle school project using SketchUp and Sefaira to optimize natural lighting and energy efficiency. Presented design findings in team meetings to senior management and participated in on-site visits. Selected through the APS PRIME program via a competitive application process including essays, resume review, and multiple interview rounds.`,
         image: null
+    },
+    {
+        id: "ussf-referee",
+        company: "U.S. Soccer Federation",
+        companyUrl: null,
+        title: "USSF Certified Referee (Metro DC-Virginia)",
+        dates: "Apr 2017 - Present",
+        description: `Certified referee through U.S. Soccer Federation, the governing body supporting nearly 140,000 officials across the country. Lead 3-man referee crews (including adult officials) across Virginia, Maryland, and DC, assigned to the most competitive leagues in the region. Entrusted with centering State Cup semifinal matches and have officiated over 100 games as both center and assistant referee. Developed strong skills in leadership, teamwork, managing others, and making quick decisions under pressure.`,
+        image: null
     }
 ];
