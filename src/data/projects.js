@@ -189,14 +189,14 @@ export const projects = [
         tech: ["ArcGIS", "Photography", "Interviewing", "Qualitative Research", "Urban Analysis", "Data Visualization"],
         links: [],
         hasDemo: false,
-        image: "/projects-images/south-end-map-main-hq.jpg",
+        image: "/projects-images/south-end-map-new.png",
         slides: [
             {
                 title: "Background & Research Context",
                 content: [
                     {
                         text: "The South End's homelessness crisis centers on Massachusetts Avenue and Melnea Cass Boulevard, known as the 'Methadone Mile.' This area became a focal point of urban struggle following the 2014 closure of Long Island, which displaced 500+ people seeking homeless services. By 2021, Boston's leadership issued executive orders to clear the encampments, but without rehabilitation support, merely displacing residents already struggling from prior displacement.",
-                        image: "/projects-images/south-end-map-main-hq.jpg",
+                        image: "/projects-images/south-end-map-new.png",
                         label: "Interactive map of South End investigation sites"
                     },
                     {
