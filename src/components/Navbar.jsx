@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export const Navbar = ({menuOpen, setMenuOpen}) => {
+    const location = useLocation();
     const [activeSection, setActiveSection] = useState("home");
 
     useEffect(() => {
@@ -8,48 +10,30 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
     }, [menuOpen]);
 
     useEffect(() => {
-        const sections = ["home", "about", "experience", "projects"];
-        
-        const handleScroll = () => {
-            let currentSection = "home";
-            let minDistance = Infinity;
-            
-            for (const sectionId of sections) {
-                const element = document.getElementById(sectionId);
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    const distance = Math.abs(rect.top - 80);
-                    
-                    if (rect.top <= 100 && distance < minDistance) {
-                        minDistance = distance;
-                        currentSection = sectionId;
-                    }
-                }
-            }
-            
-            setActiveSection(currentSection);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        handleScroll();
-        
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+        // Determine active section from current path
+        const path = location.pathname;
+        if (path === "/") {
+            setActiveSection("home");
+        } else {
+            setActiveSection(path.slice(1)); // Remove leading slash
+        }
+    }, [location]);
 
     const navLinks = [
-        { id: "home", label: "Home" },
-        { id: "about", label: "About" },
-        { id: "experience", label: "Experience" },
-        { id: "projects", label: "Projects" }
+        { id: "home", label: "Home", path: "/" },
+        { id: "about", label: "About", path: "/about" },
+        { id: "experience", label: "Experience", path: "/experience" },
+        { id: "projects", label: "Projects", path: "/projects" },
+        { id: "contact", label: "Contact", path: "/contact" }
     ];
 
     return (
-        <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+        <nav className="fixed top-0 w-full z-40 bg-[rgba(245,241,232,0.95)] backdrop-blur-lg border-b border-[#1a3a52]/10 shadow-lg">
             <div className="max-w-5xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
-                    <a href="#home" className="font-mono text-xl font-bold text-white"> 
+                    <a href="/" className="font-mono text-xl font-bold text-[#1a3a52]"> 
                         {" "}
-                        ryan-mahshie<span className="text-purple-500">.xyz</span> 
+                        AJ-Olic<span className="text-[#0d5a2d]">.portfolio</span> 
                     </a>
 
                     <div 
@@ -63,16 +47,16 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                         {navLinks.map((link) => (
                             <a 
                                 key={link.id}
-                                href={`#${link.id}`} 
+                                href={link.path}
                                 className={`relative py-2 transition-colors duration-300 ${
                                     activeSection === link.id 
-                                        ? "text-purple-400" 
-                                        : "text-gray-300 hover:text-white"
+                                        ? "text-[#0d5a2d]" 
+                                        : "text-[#1a3a52]/70 hover:text-[#1a3a52]"
                                 }`}
                             > 
                                 {link.label}
                                 {activeSection === link.id && (
-                                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full nav-indicator" />
+                                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#1a3a52] to-[#0d5a2d] rounded-full nav-indicator" />
                                 )}
                             </a>
                         ))}

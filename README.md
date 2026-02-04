@@ -1,4 +1,4 @@
-# Ryan Mahshie's Portfolio Website
+# AJ Olic's Portfolio Website
 
 A personal portfolio showcasing my projects and skills as a Computer Science student at Northeastern University.
 

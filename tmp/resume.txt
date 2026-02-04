@@ -1,0 +1,54 @@
+Aleksandar (“AJ”) Olic
+Arlington, VA | 703-362-8956 | olic.a@northeastern.edu | linkedin.com/in/aleksandar-olic
+EDUCATION
+Northeastern University, Boston, MA May 2027
+Candidate for Bachelor of Science in Mechanical Engineering, minor in Aerospace Engineering
+• Dean’s list, GPA: 3.65
+• Courses: CFD, Heat Transfer, Fluid Mechanics, Dynamics, Aero Prop, Thermodynamics, Probability & Stats.
+• Extracurriculars: AeroNU, American Society of Mechanical Engineers, FIJI fraternity, IM sports.
+• Global Scholar, completed a semester in London, UK. Summer 2025 aerospace engineering program in Seattle, WA.
+TECHNICAL SKILLS
+• Applications: SolidWorks, AutoCAD, C++, VectorWorks, MATLAB, Sketchup, ANSYS, MATHCAD, GitLab
+• Mechanics: Laser cutting, 3D printing, Power tool and soldering experience
+WORK EXPERIENCE
+MPR Associates, Alexandria, VA, Co-Op Engineer July 2025 – December 2025
+• Entrusted with multiple concurrent projects, interacted directly with clients and presented to senior leadership.
+• Conducted a System Vulnerability Review for the Reactor Coolant System and the Chemical and Volume
+Control System at an operating nuclear plant by analyzing 10+ years of plant data (LTAMS, VMAS, CRs,
+CARs, IRIS), interviewing plant personnel, and benchmarking against industry best practices. Identified critical
+system vulnerabilities and collaborated with senior engineers to develop recommendations for addressing risks.
+• Designed a standardized issue-tracking system using GitLab Flavored Markdown (GLFM) to organize client
+design changes with a corresponding process flow diagram; identified expanded implementation opportunities.
+• Performed verifications on engineering calculations and reports involving seismic analysis, chronic and surface
+oxidation, structural loads, weld parameters, design changes, and reports regarding industry best practices.
+Summit Engineers, Arlington, VA, Electrical Engineering Intern Summer 2022 – Summer 2024
+• Marked up and revised electrical plans using VectorWorks, AutoCAD, and by hand.
+• Designed lighting and electrical plans for large scale projects, including storage jobs and apartment complexes.
+• Calculated load requirements for various buildings’ circuits using reflected ceiling plans.
+• Started through PRIME Internship Program, invited to work after the program ended and following summers.
+Stantec, Arlington, VA, Intern Summer 2021
+• Designed awnings and created sunlight renderings for a new middle school using SketchUp and Sefaira.
+• Presented in team meetings to senior management and participated in on-site visits.
+PROJECTS
+Supersonic Rivet Deformation, Group Lead Summer 2025
+• Investigated the aerodynamic impact of rivet protrusions on supersonic airfoils using ANSYS Fluent to assess
+implications for drag and fuel efficiency.
+• Built and troubleshot 2D supersonic CFD models, validating stagnation points, oblique shock behavior, and
+inlet shockwave reflections against theoretical predictions.
+• Gained hands-on experience with CFD geometry preparation, meshing limitations, and boundary conditions.
+Fixed Wing, Member Fall 2024 - Present
+• Used SolidWorks, 3D printing, and Laser cutting to build an aircraft with an 800 mm wingspan from scratch.
+Autonomous Temperature Sensor, Project Lead Spring 2024
+• Designed an automatic temperature sensor using AutoCAD, Arduino, 3D-Printing, SolidWorks, and C++.
+LEADERSHIP
+United States Soccer Federation (USSF), Grassroots Soccer Referee 2017 – Present
+• Serve as center and assistant referee for highest level youth soccer matches, including State Cup semifinals.
+• Experience in leadership, teamwork (3-man crews), and quick decision-making in high pressure situations.
+Arlington Soccer Association, Youth Soccer Head Coach 2022–2023
+• Volunteer youth soccer coach (U8 and U9 boys and girls), preparing players for academy-level tryouts.
+INTERESTS
+• Skills: Certified PADI Scuba diver, Certified soccer referee, Spanish (Level 4), Serbo-Croatian (basic).
+• Interests: Aviation, traveling (60 countries on 6 continents), photography, soccer, basketball.
+
+-- 1 of 1 --
+

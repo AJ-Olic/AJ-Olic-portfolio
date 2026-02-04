@@ -64,13 +64,13 @@ export const Projects = () => {
             {/* Video Modal */}
             {showVideoModal && (
                 <div className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center pt-20 p-4 overflow-y-auto">
-                    <div className="relative w-full max-w-5xl mx-auto bg-gray-900 rounded-lg overflow-hidden max-h-[80vh]">
+                    <div className="relative w-full max-w-5xl mx-auto bg-[#f5f1e8] rounded-lg overflow-hidden max-h-[80vh]">
                         {/* Close button positioned over video */}
                         <button 
                             onClick={() => setShowVideoModal(false)}
-                            className="absolute top-3 right-3 bg-purple-600/80 text-white p-2.5 rounded-full 
-                                     border border-purple-500 shadow-lg z-10
-                                     hover:bg-purple-700 hover:scale-110 transition-all duration-200"
+                            className="absolute top-3 right-3 bg-[#0d5a2d]/80 text-[#f5f1e8] p-2.5 rounded-full 
+                                     border border-[#0d5a2d] shadow-lg z-10
+                                     hover:bg-[#0d5a2d] hover:scale-110 transition-all duration-200"
                             aria-label="Close modal"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -96,7 +96,7 @@ export const Projects = () => {
           
             <div className="max-w-3xl mx-auto px-4">
                 <RevealOnScroll delay={0}>
-                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"> 
+                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#1a3a52] to-[#0d5a2d] bg-clip-text text-transparent"> 
                         Projects
                     </h2>
                 </RevealOnScroll>
@@ -104,9 +104,9 @@ export const Projects = () => {
                 <div className="space-y-0">
                     {projects.map((project, index) => (
                         <RevealOnScroll key={index} delay={50 + index * 50}>
-                            <div className={`py-6 ${index !== 0 ? 'border-t border-gray-800' : ''}`}>
+                            <div className={`py-6 ${index !== 0 ? 'border-t border-[#1a3a52]/10' : ''}`}>
                                 <div className="flex justify-between items-start mb-3">
-                                    <h3 className="text-xl font-bold text-white">{project.name}</h3>
+                                    <h3 className="text-xl font-bold text-[#1a3a52]">{project.name}</h3>
                                     <div className="flex gap-3">
                                         {project.links.map((link, linkIndex) => (
                                             <a 
@@ -114,7 +114,7 @@ export const Projects = () => {
                                                 href={link.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="btn-interactive text-purple-400"
+                                                className="btn-interactive text-[#0d5a2d]"
                                             > 
                                                 {link.label} <span className="arrow">→</span>
                                             </a>
@@ -122,7 +122,7 @@ export const Projects = () => {
                                         {project.hasDemo && (
                                             <button 
                                                 onClick={() => setShowVideoModal(true)}
-                                                className="btn-interactive text-purple-400 cursor-pointer"
+                                                className="btn-interactive text-[#0d5a2d] cursor-pointer"
                                             > 
                                                 Watch Demo <span className="arrow">→</span>
                                             </button>
@@ -130,7 +130,7 @@ export const Projects = () => {
                                     </div>
                                 </div>
                                 
-                                <p className="text-gray-300 mb-4 leading-relaxed">
+                                <p className="text-[#1a3a52]/80 mb-4 leading-relaxed">
                                     {project.description}
                                 </p>
                                 
@@ -138,8 +138,8 @@ export const Projects = () => {
                                     {project.tech.map((tech, techIndex) => (
                                         <span 
                                             key={techIndex}
-                                            className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                        hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition-all"
+                                            className="bg-[#0d5a2d]/10 text-[#0d5a2d] py-1 px-3 rounded-full text-sm hover:bg-[#0d5a2d]/20
+                                                        hover:shadow-[0_2px_8px_rgba(13,90,45,0.2)] transition-all"
                                         >
                                             {tech} 
                                         </span>

@@ -1,39 +1,33 @@
 import './App.css'
-import { useState } from "react";
-import { LoadingScreen } from './components/LoadingScreen'
-import { Navbar } from './components/Navbar';
-import { MobileMenu } from './components/MobileMenu';
-import { Home } from './components/sections/Home'
-import { About } from './components/sections/About';
-import { Experience } from './components/sections/Experience';
-import { Projects } from './components/sections/Projects';
-import { Footer } from './components/Footer';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { Layout } from './components/Layout';
+import HomePage from './pages/Home';
+import AboutPage from './pages/About';
+import ExperiencePage from './pages/Experience';
+import ExperienceDetail from './pages/ExperienceDetail';
+import ProjectsPage from './pages/Projects';
+import ProjectDetail from './pages/ProjectDetail';
+import ContactPage from './pages/Contact';
 import "./index.css"
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <>
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
-      <div 
-        className={`min-h-screen transition-opacity duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-          } bg-black text-gray-100`}
-      >
-       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      {/* ✅ Add this overlay before MobileMenu */}
-      {menuOpen && (
-      <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-30 opacity-0 animate-fade-in"></div>
-      )}
-       <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-       <Home />
-       <About />
-       <Experience />
-       <Projects />
-       <Footer />
+    <div className="min-h-screen bg-[#f5f1e8] text-[#1a3a52]">
+      <Router>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/experience" element={<ExperiencePage />} />
+              <Route path="/experience/:id" element={<ExperienceDetail />} />
+              <Route path="/projects/:id" element={<ProjectDetail />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Route>
+          </Routes>
+        </Router>
       </div>
-    </>
   )
 }
 

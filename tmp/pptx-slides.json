@@ -1,0 +1,310 @@
+[
+  {
+    "slideNumber": 1,
+    "texts": [
+      "My Portfolio",
+      "AJ Olic"
+    ],
+    "images": [
+      {
+        "file": "image1.JPG",
+        "url": "/projects-images/ppt-image1.JPG",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 2,
+    "texts": [
+      "Table of Contents"
+    ],
+    "images": []
+  },
+  {
+    "slideNumber": 3,
+    "texts": [
+      "About Me",
+      "I am a 3rd year mechanical engineering student at Northeastern University, studying with a minor in aerospace engineering. Professionally, my goal is to be at the forefront of the engineering industry.",
+      "Throughout my academic experience, I have had numerous professional experiences, including internships spanning from architecture to electrical engineering, and a co-op with a wide variety of disciplines.",
+      "I’ve loved engineering for as long as I can remember. It provides the unique opportunity to solve complex challenges with critical thinking.",
+      "I am currently involved in Northeastern’s Fixed Wing club, where we are building multiple RC planes from scratch. Outside of Academics I am an avid traveler (visiting 60 countries across 6 continents), as well as a soccer fanatic, participating as a coach, player, and referee."
+    ],
+    "images": [
+      {
+        "file": "image2.jpg",
+        "url": "/projects-images/ppt-image2.jpg",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 4,
+    "texts": [
+      "Work Experience",
+      "MPR Associates",
+      "Fall 2025",
+      "Given the nature of my work at MPR, I am unable to share any direct examples of my work or go into much detail.",
+      "Some of the work did include conducting a System Vulnerability Review for the Reactor Coolant System and the Chemical and Volume Control System at an operating nuclear plant by analyzing 10+ years of plant data (LTAMS, VMAS, CRs, CARs, IRIS), interviewing plant personnel, and benchmarking against industry best practices. Through this process I identified critical system vulnerabilities and collaborated with senior engineers to develop recommendations to properly address key risks.",
+      "Additionally, I designed a standardized issue-tracking system using GitLab Flavored Markdown (GLFM) to organize client design changes with a corresponding process flow diagram; identified expanded implementation opportunities.",
+      "Another face of my work included verifying engineering calculations and reports involving seismic analysis, chronic and surface oxidation, structural loads, weld parameters, design changes, and industry best practice reports.",
+      "Summit Engineers",
+      "Summer 2022, Summer 2024",
+      "I was initially given this internship as a junior in high school, to assist as an architectural engineer designing electrical fixtures. I earned a strong report with my boss and was invited to return in future summers. Some of the work included marking up and revising electrical plans using Vector Works, AutoCAD, and by hand.",
+      "I also designed lighting and electrical plans for large scale projects, including storage jobs and apartment complexes.  Calculated load requirements for various buildings’ circuits using reflected ceiling plans. I started through PRIME Internship Program, invited to work after the program ended and following summers."
+    ],
+    "images": [
+      {
+        "file": "image4.jpeg",
+        "url": "/projects-images/ppt-image4.jpeg",
+        "rId": "rId5"
+      },
+      {
+        "file": "image3.jpeg",
+        "url": "/projects-images/ppt-image3.jpeg",
+        "rId": "rId4"
+      }
+    ]
+  },
+  {
+    "slideNumber": 5,
+    "texts": [
+      "Work Experience",
+      "MPR Associates",
+      "Engineering Co-op,",
+      "Fall 2025",
+      "Summit Engineers",
+      "Electrical Engineering Intern,",
+      "Summer 2022, Summer 2024",
+      "Given the nature of my work, I am unable to share examples of my work due to signed NDA’s.",
+      "Stantec",
+      "Summer Intern,",
+      "Summer 2021"
+    ],
+    "images": [
+      {
+        "file": "image5.jpeg",
+        "url": "/projects-images/ppt-image5.jpeg",
+        "rId": "rId6"
+      },
+      {
+        "file": "image4.jpeg",
+        "url": "/projects-images/ppt-image4.jpeg",
+        "rId": "rId5"
+      },
+      {
+        "file": "image3.jpeg",
+        "url": "/projects-images/ppt-image3.jpeg",
+        "rId": "rId4"
+      }
+    ]
+  },
+  {
+    "slideNumber": 6,
+    "texts": [
+      "Supersonic Rivet Deformation (1/3)",
+      "Background",
+      ":",
+      "In my Aeronautical Propulsion class over the summer in Seattle, we were tasked with making a project our choice that involved using ANSYS.",
+      "Objective",
+      ":",
+      "The goal was to explore how rivet protrusions impact the aerodynamics and fuel efficiency for supersonic commercial travel. Additionally, we wanted to exemplify how smooth surface are imperative to efficient designs for the new era of commercial jets. This was done at a chord of 1 m near the wingtip of the Concorde.",
+      "Velocity Vectors along airfoil.",
+      "Concorde Design with chord highlighted."
+    ],
+    "images": [
+      {
+        "file": "image7.png",
+        "url": "/projects-images/ppt-image7.png",
+        "rId": "rId3"
+      },
+      {
+        "file": "image6.png",
+        "url": "/projects-images/ppt-image6.png",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 7,
+    "texts": [
+      "Supersonic Rivet Deformation: (2/3)",
+      "My Contribution:",
+      "I was responsible for conducting prior research and modelling the airfoil with rivet protrusions.",
+      "Historical studies were used to influence our predictions, and they yielded input into how different sized rivets would impact the pressure, drag, and lift coefficients at subsonic speed.",
+      "To simulate rivet deformation, I created an array of arcs along the Concorde airfoil in AutoCAD, ensuring it was all one polyline. I then imported the .dwg file into SolidWorks to create a part in order to define geometry. I then uploaded the 3D part into ANSYS and used the face to define a 2D boundary box around the airfoil.",
+      "AutoCAD model of airfoil with rivets.",
+      "Mesh generated for airfoil with rivets."
+    ],
+    "images": [
+      {
+        "file": "image9.png",
+        "url": "/projects-images/ppt-image9.png",
+        "rId": "rId3"
+      },
+      {
+        "file": "image8.png",
+        "url": "/projects-images/ppt-image8.png",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 8,
+    "texts": [
+      "Supersonic Rivet Deformation: Results (3/3)",
+      "Results",
+      ":",
+      "The most substantial results were modelling clean airfoil at supersonic conditions.",
+      "Initially, the upper and lower surfaces were mistakenly kept as “walls.” This was not the initial goal, but it validated prior knowledge regarding stagnation point predictions, oblique shockwave behavior, and inlet shockwave reflections",
+      "Correct boundary conditions yielded the expected stagnation point and shockwaves, mimicking known wave patterns.",
+      "Mach number contour with improper boundary conditions.",
+      "Velocity magnitude contour.",
+      "Static temperature contour with proper boundary conditions."
+    ],
+    "images": [
+      {
+        "file": "image11.png",
+        "url": "/projects-images/ppt-image11.png",
+        "rId": "rId3"
+      },
+      {
+        "file": "image10.png",
+        "url": "/projects-images/ppt-image10.png",
+        "rId": "rId2"
+      },
+      {
+        "file": "image12.png",
+        "url": "/projects-images/ppt-image12.png",
+        "rId": "rId4"
+      }
+    ]
+  },
+  {
+    "slideNumber": 9,
+    "texts": [
+      "Lasercut",
+      "Challenger Model (1/3)",
+      "Background:",
+      "For my freshman engineering capstone 1 class, we were tasked with designing a visual and interactive project to teach an engineering tragedy using AutoCAD, C++, and an Arduino.",
+      "Goal:",
+      "My group decided on the Challenger crash, where the user would go through a series of activities to learn about what caused this disaster.",
+      "Completed Challenger Game."
+    ],
+    "images": [
+      {
+        "file": "image13.jpeg",
+        "url": "/projects-images/ppt-image13.jpeg",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 10,
+    "texts": [
+      "Lasercut",
+      "Challenger Model (2/3)",
+      "My Contribution",
+      ":",
+      "To design the model, I first defined the key components that would be imperative to capture the essence of the space shuttle. These included the delta wings, the fuselage, the vertical tail, the engines, and the nose.",
+      "When iterating designs, I found that having one base component for all other pieces to connect to worked the best, so I moved forward with this using mortise and tenon joints.",
+      "The margin of error for the laser cutter was inconsistent between uses, which forced me to create a sizing template to ensure the joints would properly connect",
+      "To ensure the model would work as intended, I modelled a shrunken version that included all key components, confirming each portion worked as intended.",
+      "All components for Laser cutting, shown in AutoCAD."
+    ],
+    "images": [
+      {
+        "file": "image14.png",
+        "url": "/projects-images/ppt-image14.png",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 11,
+    "texts": [
+      "Lasercut",
+      "Challenger Model (3/3)",
+      "Results",
+      ":",
+      "The resulting model accurately depicted the Challenger space shuttle. This successfully intertwined with the rest of the project, where the model was a tool for users to complete a system check of the shuttle.",
+      "This project furthered my skills in 2D design, and I gained hands-on experience with laser cutting.",
+      "Completed Challenger Model."
+    ],
+    "images": [
+      {
+        "file": "image15.png",
+        "url": "/projects-images/ppt-image15.png",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 12,
+    "texts": [
+      "Autonomous Temperature Sensor (1/3)",
+      "Background:",
+      "During my semester in London, we were tasked with designing a robot to improve our lives. Given the lack of centralized heating and AC, we wanted to create a solution to solve this problem.",
+      "Goal:",
+      "The goal of this project was to design a robot that could automatically adjust the radiator nozzle based on a preset temperature. This was done by building a robot that would sit on top of the nozzle and use a temperature sensor to track the deviation from the current temperature to the ideal temperature.",
+      "Temperature sensor demonstration."
+    ],
+    "images": [
+      {
+        "file": "image16.png",
+        "url": "/projects-images/ppt-image16.png",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 13,
+    "texts": [
+      "Autonomous Temperature Sensor (2/3)",
+      "My contribution:",
+      "I served as project leader and spearheaded the design process.",
+      "I designed a 3D-printed enclosure to house the electronic components (temperature sensor, LCD, DC motor, motor driver, battery pack).",
+      "Developed an efficient control algorithm that checks temperature every 10 minutes to optimize battery life. Encountered and resolved challenges, such as unidirectional motor movement due to incomplete power connections, and improved torque by upgrading to a stronger DC motor with a gear train.",
+      "Conducted tests by clamping the valve and ensuring proper height alignment for optimal performance.",
+      "Arduino wiring.",
+      "LCD Display",
+      "DC Motor",
+      "Temperature",
+      "Sensor",
+      "Channel",
+      "Driver",
+      "Arduino"
+    ],
+    "images": [
+      {
+        "file": "image17.png",
+        "url": "/projects-images/ppt-image17.png",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 14,
+    "texts": [
+      "Autonomous Temperature Sensor (3/3)",
+      "Results:",
+      "We successfully developed a working prototype that could autonomously adjust the radiator temperature.",
+      "This demonstrated an improved ease of use compared to manual adjustments, benefiting individuals with mobility limitations.",
+      "We also identified areas for future improvement, including better wire management, component integration, and a universal attachment for compatibility with various radiator types.",
+      "Completed temperature sensor (open box)."
+    ],
+    "images": [
+      {
+        "file": "image18.png",
+        "url": "/projects-images/ppt-image18.png",
+        "rId": "rId2"
+      }
+    ]
+  },
+  {
+    "slideNumber": 15,
+    "texts": [
+      "Contact Me!"
+    ],
+    "images": []
+  }
+]

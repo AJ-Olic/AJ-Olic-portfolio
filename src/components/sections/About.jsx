@@ -2,7 +2,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
     
-    const skills = ["Go", "Python", "Java", "Azure", "Docker", "LangGraph", "Kubernetes"];
+    const skills = ["ANSYS (Fluent and Mechanical)","Matlab", "Solidworks", "Autocad", "C++", "3D Printing", "Lasercutting", "Soldering"];
 
     return (
         <section 
@@ -11,19 +11,18 @@ export const About = () => {
           
             <div className="max-w-3xl mx-auto px-4">
                 <RevealOnScroll delay={0}>
-                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent"> 
+                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#1a3a52] to-[#0d5a2d] bg-clip-text text-transparent"> 
                         About Me
                     </h2>
                 </RevealOnScroll>
 
                 <RevealOnScroll delay={50}>
-                    <p className="text-gray-300 mb-6 leading-relaxed">
-                    I'm a computer science student at Northeastern University with an AI concentration and a 3.91 GPA. 
-                    Over the past year, I've worked as a backend engineer across different industries and company sizes, 
-                    owning features and shipping production code. I work primarily in Go and Python, with experience across 
-                    AWS and deep work in Azure infrastructure. I've also been building with agentic AI frameworks since 
-                    before the tooling matured.
-                    </p>
+                    <div className="text-[#1a3a52]/80 mb-6 leading-relaxed space-y-4">
+                        <p>I'm a third-year mechanical engineering student at Northeastern University with a minor in aerospace engineering (GPA: 3.65, Dean's List). My coursework spans CFD, heat transfer, fluid mechanics, thermodynamics, and aeronautical propulsioncomplemented by hands-on experience in SolidWorks, ANSYS Fluent, AutoCAD, MATLAB, and C++.</p>
+                        <p>Most recently, I completed a co-op at MPR Associates, a nuclear engineering consultancy, where I conducted system vulnerability reviews analyzing 10+ years of plant data, designed issue-tracking systems using GitLab, and verified engineering calculations for seismic analysis and structural loads. Prior internships at Summit Engineers and Stantec gave me experience in electrical system design and architectural engineering.</p>
+                        <p>My project experience includes leading CFD analysis of supersonic rivet deformation on Concorde-style airfoils, building RC aircraft from scratch with Northeastern's Fixed Wing club, and designing an autonomous temperature sensor using Arduino and C++.</p>
+                        <p>Beyond engineering, I've traveled to 60 countries across 6 continents, serve as a USSF-certified soccer referee, and have coached youth soccer teams. I bring the same teamwork, quick decision-making, and leadership to my engineering work.</p>
+                    </div>
                 </RevealOnScroll>
 
                 <RevealOnScroll delay={100}>
@@ -31,8 +30,8 @@ export const About = () => {
                         {skills.map((tech, key) => (
                             <span 
                                 key={key}
-                                className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20
-                                                hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition"
+                                className="bg-[#0d5a2d]/10 text-[#0d5a2d] py-1 px-3 rounded-full text-sm hover:bg-[#0d5a2d]/20
+                                                hover:shadow-[0_2px_8px_rgba(13,90,45,0.2)] transition"
                             >
                                {tech} 
                             </span>
