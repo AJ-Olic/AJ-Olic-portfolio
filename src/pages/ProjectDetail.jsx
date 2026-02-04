@@ -93,9 +93,9 @@ const ProjectDetail = () => {
                                 <h3 className="text-2xl font-bold mb-3 text-[#0d5a2d]">{slide.title}</h3>
                                 <div>
                                     {slide.content.map((block, blockIdx) => (
-                                        <div key={blockIdx} className="mb-4">
+                                        <div key={blockIdx} className="mb-6 clear-both">
                                             {(block.image || block.mapKey) && (
-                                                <div className={`w-full sm:w-2/5 mb-3 sm:mb-2 ${blockIdx % 2 === 0 ? 'sm:float-left sm:mr-4' : 'sm:float-right sm:ml-4'}`}>
+                                                <div className={`w-full sm:w-1/3 mb-3 sm:mb-2 ${blockIdx % 2 === 0 ? 'sm:float-left sm:mr-4' : 'sm:float-right sm:ml-4'}`}>
                                                     {block.mapKey ? (
                                                         <MapKeyLegend />
                                                     ) : (
@@ -113,7 +113,6 @@ const ProjectDetail = () => {
                                             )}
                                         </div>
                                     ))}
-                                    <div className="clear-both"></div>
                                 </div>
                             </div>
                         ))}
