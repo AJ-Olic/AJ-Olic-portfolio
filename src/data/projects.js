@@ -190,6 +190,7 @@ export const projects = [
         links: [],
         hasDemo: false,
         image: "/projects-images/south-end-map-new.png",
+        interactiveMap: "https://www.google.com/maps/d/embed?mid=1ht6siWWbniqvIZzXv7r7TFIB_8BckTA&ll=42.33971367704297,-71.0760955214569&z=15",
         slides: [
             {
                 title: "Background & Research Context",

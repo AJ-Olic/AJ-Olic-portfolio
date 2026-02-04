@@ -59,6 +59,27 @@ const ProjectDetail = () => {
                     <p className="text-[#1a3a52]/80 leading-relaxed mb-6">{project.description}</p>
                 </RevealOnScroll>
 
+                {project.interactiveMap && (
+                    <RevealOnScroll delay={100}>
+                        <div className="mb-8">
+                            <h3 className="text-xl font-bold mb-3 text-[#0d5a2d]">Interactive Map</h3>
+                            <div className="rounded-lg overflow-hidden border border-[#1a3a52]/20 shadow-lg">
+                                <iframe
+                                    src={project.interactiveMap}
+                                    width="100%"
+                                    height="480"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Interactive project map"
+                                ></iframe>
+                            </div>
+                            <p className="text-sm text-[#1a3a52]/60 mt-2 italic">Click on markers to explore investigation sites</p>
+                        </div>
+                    </RevealOnScroll>
+                )}
+
                 {project.links && project.links.length > 0 && (
                     <RevealOnScroll delay={150}>
                         <div className="flex gap-3 flex-wrap mb-6">
