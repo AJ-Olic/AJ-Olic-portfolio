@@ -2,7 +2,7 @@ import { RevealOnScroll } from "../components/RevealOnScroll";
 
 const AboutPage = () => {
     
-    const skills = ["ANSYS (Fluent and Mechanical)","Matlab", "Solidworks", "Autocad", "C++", "3D Printing", "Lasercutting", "Soldering"];
+    const skills = ["ANSYS (Fluent & Mechanical)", "MATLAB", "SolidWorks", "AutoCAD", "C++", "3D Printing", "Laser Cutting", "Soldering"];
 
     return (
         <section className="py-20">

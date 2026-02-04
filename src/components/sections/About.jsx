@@ -1,8 +1,8 @@
-import { RevealOnScroll } from "../RevealOnScroll";
+﻿import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
     
-    const skills = ["ANSYS (Fluent and Mechanical)","Matlab", "Solidworks", "Autocad", "C++", "3D Printing", "Lasercutting", "Soldering"];
+    const skills = ["ANSYS (Fluent & Mechanical)", "MATLAB", "SolidWorks", "AutoCAD", "C++", "3D Printing", "Laser Cutting", "Soldering"];
 
     return (
         <section 
@@ -18,7 +18,7 @@ export const About = () => {
 
                 <RevealOnScroll delay={50}>
                     <div className="text-[#1a3a52]/80 mb-6 leading-relaxed space-y-4">
-                        <p>I'm a third-year mechanical engineering student at Northeastern University with a minor in aerospace engineering (GPA: 3.65, Dean's List). My coursework spans CFD, heat transfer, fluid mechanics, thermodynamics, and aeronautical propulsioncomplemented by hands-on experience in SolidWorks, ANSYS Fluent, AutoCAD, MATLAB, and C++.</p>
+                        <p>I'm a third-year mechanical engineering student at Northeastern University with a minor in aerospace engineering (GPA: 3.65, Dean's List). My coursework spans CFD, heat transfer, fluid mechanics, thermodynamics, and aeronautical propulsion—complemented by hands-on experience in SolidWorks, ANSYS Fluent, AutoCAD, MATLAB, and C++.</p>
                         <p>Most recently, I completed a co-op at MPR Associates, a nuclear engineering consultancy, where I conducted system vulnerability reviews analyzing 10+ years of plant data, designed issue-tracking systems using GitLab, and verified engineering calculations for seismic analysis and structural loads. Prior internships at Summit Engineers and Stantec gave me experience in electrical system design and architectural engineering.</p>
                         <p>My project experience includes leading CFD analysis of supersonic rivet deformation on Concorde-style airfoils, building RC aircraft from scratch with Northeastern's Fixed Wing club, and designing an autonomous temperature sensor using Arduino and C++.</p>
                         <p>Beyond engineering, I've traveled to 60 countries across 6 continents, serve as a USSF-certified soccer referee, and have coached youth soccer teams. I bring the same teamwork, quick decision-making, and leadership to my engineering work.</p>
