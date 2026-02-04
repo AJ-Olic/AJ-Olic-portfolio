@@ -1,6 +1,6 @@
 {
-  "name": "personalwebsite",
-  "homepage": "https://RMahshie.github.io/ryan-mahshie-portfolio",
+  "name": "aj-olic-portfolio",
+  "homepage": "https://ajolic.vercel.app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "postbuild": "echo ryan-mahshie.xyz > dist/CNAME",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
