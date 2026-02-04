@@ -23,7 +23,7 @@ const AboutPage = () => {
                                     alt="AJ with Nikola Tesla statue" 
                                     className="w-full rounded-lg shadow-lg border-2 border-[#0d5a2d]/20"
                                 />
-                                <p className="text-center text-sm text-[#1a3a52]/60 mt-2 italic">With Nikola Tesla in Belgrade, Serbia</p>
+                                <p className="text-center text-sm text-[#1a3a52]/60 mt-2 italic">With Nikola Tesla at Niagara Falls, NY</p>
                             </div>
                         </div>
                         <div className="md:w-2/3 text-[#1a3a52]/80 leading-relaxed space-y-4">
