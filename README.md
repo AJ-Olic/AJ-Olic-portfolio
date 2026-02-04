@@ -1,25 +1,29 @@
 # AJ Olic's Portfolio Website
 
-A personal portfolio showcasing my projects and skills as a Computer Science student at Northeastern University.
+A personal portfolio showcasing my projects, experience, and skills as a Mechanical Engineering student at Northeastern University.
 
 ## About Me
-I'm a third-year Computer Science major at Northeastern University with a focus on solving real-world problems using machine learning and back-end development.
+I'm a third-year mechanical engineering student at Northeastern University with a minor in aerospace engineering (GPA: 3.65, Dean's List). My coursework spans CFD, heat transfer, fluid mechanics, thermodynamics, and aeronautical propulsion—complemented by hands-on experience in SolidWorks, ANSYS Fluent, AutoCAD, MATLAB, and C++.
 
 ## Featured Projects
-- **LawSearch AI**: AI-powered Q&A system using RAG pipeline to retrieve information from U.S. legislative documents
-- **ASL Image Classifier**: Deep learning model using CNN architecture to classify American Sign Language hand signs
-- **MacOS ZSH Shell**: Custom Unix shell built in C with support for command parsing, piping, and file redirection
+- **Supersonic Rivet Deformation Analysis**: CFD analysis of supersonic rivet deformation on Concorde-style airfoils
+- **South End Urban Study**: Sociological investigation of Boston's South End neighborhood with interactive mapping
+- **RC Aircraft Design**: Building RC aircraft from scratch with Northeastern's Fixed Wing club
+- **Autonomous Temperature Sensor**: Arduino-based sensor design using C++
 - **This Portfolio**: Built with React, Tailwind CSS, and Vite
 
 ## Skills
-- **Languages**: Python, JavaScript, C, Java
-- **AI/ML**: PyTorch, LangChain, ChatGPT API, CNN Architecture
-- **Web Development**: React, Tailwind CSS, Vite
-- **Other**: Git, Unix, ChromaDB, Bash/ZSH
+- **Engineering Software**: ANSYS (Fluent and Mechanical), SolidWorks, AutoCAD, MATLAB
+- **Programming**: C++, Python
+- **Fabrication**: 3D Printing, Lasercutting, Soldering
+
+## Experience
+- **MPR Associates**: Nuclear engineering co-op - system vulnerability reviews, GitLab issue tracking, seismic analysis verification
+- **Summit Engineers**: Electrical system design
+- **Stantec**: Architectural engineering
 
 ## Contact
 Feel free to reach out to me through:
-- Website: [ryan-mahshie.xyz](https://ryan-mahshie.xyz/)
-- GitHub: [RMahshie](https://github.com/RMahshie)
-- Email: mahshie.r@northeastern.edu
+- GitHub: [AJ-Olic](https://github.com/AJ-Olic)
+- Email: olic.a@northeastern.edu
 
