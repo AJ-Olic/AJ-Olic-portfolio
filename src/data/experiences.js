@@ -14,16 +14,16 @@ export const experiences = [
         companyUrl: null,
         title: "Electrical Engineering Intern",
         dates: "Summer 2022 - Summer 2024",
-        description: `Marked up and revised electrical plans using VectorWorks and AutoCAD. Designed lighting and electrical plans for large projects and calculated circuit load requirements from reflected ceiling plans. Participated in PRIME internship program and extended work after completion of the program.`,
+        description: `Marked up and revised electrical plans using VectorWorks and AutoCAD. Designed lighting and electrical plans for large projects and calculated circuit load requirements from reflected ceiling plans. Selected for the APS PRIME internship program—a competitive program for the top 30 gifted 10th/11th graders placed in professional organizations. One of few students selected for a second consecutive year.`,
         image: null
     },
     {
         id: "stantec",
         company: "Stantec",
         companyUrl: null,
-        title: "Summer Intern",
+        title: "Architecture Intern",
         dates: "Summer 2021",
-        description: `Created sunlight renderings and designed awnings using SketchUp and Sefaira. Presented findings to senior management and participated in on-site visits.`,
+        description: `Interned at Stantec, an international architecture and design firm with 26,000 employees across 400+ locations on 6 continents. Worked in the Architecture group focused on sustainable school design. Created sunlight renderings for a middle school project using SketchUp and Sefaira to optimize natural lighting and energy efficiency. Presented design findings in team meetings to senior management and participated in on-site visits. Selected for the APS PRIME internship program through a competitive application process including essays, resume review, and multiple interview rounds.`,
         image: null
     }
 ];
