@@ -6,7 +6,10 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
     const [activeSection, setActiveSection] = useState("home");
 
     useEffect(() => {
-        document.body.style.overflow = menuOpen ? "hidden" : ""
+        document.body.style.overflow = menuOpen ? "hidden" : "";
+        return () => {
+            document.body.style.overflow = "";
+        };
     }, [menuOpen]);
 
     useEffect(() => {
@@ -36,12 +39,14 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                         AJ-Olic<span className="text-[#0d5a2d]">.portfolio</span> 
                     </a>
 
-                    <div 
+                    <button 
                         className={`w-7 h-5 relative cursor-pointer z-40 md:hidden transition-opacity duration-200 ${
                             menuOpen ? "opacity-0 pointer-events-none" : "opacity-100"}`}
-                        onClick={() => setMenuOpen(true)}>
+                        onClick={() => setMenuOpen(true)}
+                        aria-label="Open navigation menu"
+                        aria-expanded={menuOpen}>
                         &#9776;
-                    </div>
+                    </button>
 
                     <div className="hidden md:flex items-center space-x-8 relative">
                         {navLinks.map((link) => (

@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
 
     // Handle click outside to close menu

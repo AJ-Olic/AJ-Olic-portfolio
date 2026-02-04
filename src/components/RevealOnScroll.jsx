@@ -5,11 +5,13 @@ export const RevealOnScroll = ({ children, className = "", delay = 0 }) => {
 
   useEffect(() => {
     // Show everything immediately on page load
-    if (ref.current) {
-      setTimeout(() => {
+    const timer = setTimeout(() => {
+      if (ref.current) {
         ref.current.classList.add("visible");
-      }, delay);
-    }
+      }
+    }, delay);
+
+    return () => clearTimeout(timer);
   }, [delay]);
 
   return (
