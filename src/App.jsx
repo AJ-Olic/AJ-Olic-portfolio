@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Layout } from './components/Layout';
+import { ScrollToTop } from './components/ScrollToTop';
 import HomePage from './pages/Home';
 import AboutPage from './pages/About';
 import ExperiencePage from './pages/Experience';
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#f5f1e8] text-[#1a3a52]">
       <Router>
+          <ScrollToTop />
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<HomePage />} />
