@@ -6,7 +6,7 @@ export const experiences = [
         title: "Co-Op Engineer",
         dates: "Jul 2025 - Dec 2025",
         description: `Conducted a System Vulnerability Review for reactor systems at an operating nuclear plant by analyzing 10+ years of operational data, interviewing plant personnel, and benchmarking industry best practices. Identified critical vulnerabilities and collaborated with senior engineers on mitigation recommendations. Designed a standardized issue-tracking workflow in GitLab Flavored Markdown to organize client design changes and implemented process diagrams. Performed engineering verifications including seismic analysis, oxidation reports, structural loads, and weld parameter checks.`,
-        tech: ["GitLab", "Data Analysis", "Seismic Analysis", "Structural Analysis", "Technical Writing", "Process Design"],
+        tech: ["GitLab", "Mathcad", "MATLAB", "ANSYS Structural", "Data Analysis", "Technical Writing"],
         image: null
     },
     {
