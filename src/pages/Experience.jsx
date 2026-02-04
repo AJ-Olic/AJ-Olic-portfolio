@@ -20,7 +20,20 @@ const ExperiencePage = () => {
                                     <span className="text-sm text-[#1a3a52]">{exp.title}</span>
                                     <span className="text-sm text-[#0d5a2d]">{exp.dates}</span>
                                 </div>
-                                <p className="text-[#1a3a52]/80 leading-relaxed">{exp.description}</p>
+                                <p className="text-[#1a3a52]/80 leading-relaxed mb-3">{exp.description}</p>
+                                {exp.tech && (
+                                    <div className="flex flex-wrap gap-2">
+                                        {exp.tech.map((skill, skillIndex) => (
+                                            <span 
+                                                key={skillIndex}
+                                                className="bg-[#0d5a2d]/10 text-[#0d5a2d] py-1 px-3 rounded-full text-sm hover:bg-[#0d5a2d]/20
+                                                            hover:shadow-[0_2px_8px_rgba(13,90,45,0.2)] transition-all"
+                                            >
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </RevealOnScroll>
                     ))}
