@@ -5,8 +5,8 @@ export const experiences = [
         companyUrl: null,
         title: "Co-Op Engineer",
         dates: "Jul 2025 - Dec 2025",
-        description: `Conducted a System Vulnerability Review for reactor systems at an operating nuclear plant by analyzing 10+ years of operational data, interviewing plant personnel, and benchmarking industry best practices. Identified critical vulnerabilities and collaborated with senior engineers on mitigation recommendations. Designed a standardized issue-tracking workflow in GitLab Flavored Markdown to organize client design changes and implemented process diagrams. Performed engineering verifications including seismic analysis, oxidation reports, structural loads, and weld parameter checks.`,
-        tech: ["GitLab", "Mathcad", "MATLAB", "ANSYS Structural", "Data Analysis", "Technical Writing"],
+        description: `Conducted a System Vulnerability Review for reactor coolant (RCS) and chemical volume control (CVCS) systems at an operating nuclear plant, analyzing 10+ years of operational data and interviewing plant personnel. Verified seismic analysis calculations using response spectra from 5 earthquake scenarios, then modeled structural response in ANSYS to generate displacement-time graphs at critical nodes using MATLAB. Validated structural calculations in Mathcad for pipe loads, lifting loads, beam deflection, and failure analysis. Performed graphite oxidation analysis (surface, chronic, thermal, and radiolytic oxidation) in MATLAB and Mathcad. Designed a standardized issue-tracking workflow in GitLab to organize design changes. Work subject to NDA restrictions.`,
+        tech: ["GitLab", "Mathcad", "MATLAB", "ANSYS Structural", "Seismic Analysis", "Technical Writing"],
         image: null
     },
     {
@@ -15,7 +15,7 @@ export const experiences = [
         companyUrl: null,
         title: "Electrical Engineering Intern",
         dates: "Summer 2022 - Summer 2024",
-        description: `Interned at Summit Engineers, a mechanical, electrical, and plumbing (MEP) engineering consulting firm in Arlington, Virginia serving building owners, developers, architects, and government organizations. Marked up and revised electrical plans using VectorWorks and AutoCAD. Designed lighting and electrical plans for large projects and calculated circuit load requirements from reflected ceiling plans. Selected through the APS PRIME program—a competitive internship for the top 30 gifted 10th/11th graders. One of few students chosen twice, enabling both this role and my earlier Stantec internship.`,
+        description: `Interned at Summit Engineers, an MEP engineering consulting firm in Arlington, Virginia. Designed lighting systems independently for commercial storage facilities and assisted with electrical plans for apartment buildings. Marked up and revised electrical drawings using VectorWorks and AutoCAD, calculated circuit load requirements from reflected ceiling plans, and completed RFIs for clients. Selected through the APS PRIME program—a competitive internship for the top 30 gifted 10th/11th graders. One of few students chosen twice, enabling both this role and my earlier Stantec internship.`,
         tech: ["VectorWorks", "AutoCAD", "Electrical Design", "Lighting Design", "Load Calculations"],
         image: null
     },
@@ -35,7 +35,7 @@ export const experiences = [
         companyUrl: null,
         title: "USSF Certified Referee (Metro DC-Virginia)",
         dates: "Apr 2017 - Present",
-        description: `Certified referee through U.S. Soccer Federation, the governing body supporting nearly 140,000 officials across the country. Lead 3-man referee crews (including adult officials) across Virginia, Maryland, and DC, assigned to the most competitive leagues in the region. Entrusted with centering State Cup semifinal matches and have officiated over 100 games as both center and assistant referee. Developed strong skills in leadership, teamwork, managing others, and making quick decisions under pressure.`,
+        description: `USSF-certified referee officiating at the highest levels of youth soccer in the Mid-Atlantic region. Assigned to competitive travel leagues, Virginia State Cup semifinal matches, and MLS academy games. Lead 3-man referee crews (including adult officials) across Virginia, Maryland, and DC. Developed strong skills in leadership, conflict resolution, and split-second decision-making under pressure—skills that translate directly to high-stakes engineering environments.`,
         tech: ["Leadership", "Team Management", "Decision Making", "Conflict Resolution", "Communication"],
         image: null
     }

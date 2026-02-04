@@ -149,17 +149,17 @@ export const projects = [
                 title: "My Contribution",
                 content: [
                     {
-                        text: "I served as project leader and spearheaded the design process. I designed a 3D-printed enclosure to house the electronic components (temperature sensor, LCD, DC motor, motor driver, battery pack).",
+                        text: "I served as project leader and spearheaded the design process. I designed a 3D-printed enclosure to house the electronic components (temperature sensor, LCD, DC motor, motor driver, battery pack). Selected a DC motor over a servo for significantly higher torque required to turn radiator valves.",
                         image: "/projects-images/ppt-image17.png",
                         label: "Arduino wiring and electronics"
                     },
                     {
-                        text: "Developed an efficient control algorithm that checks temperature every 10 minutes to optimize battery life. Encountered and resolved challenges, such as unidirectional motor movement due to incomplete power connections, and improved torque by upgrading to a stronger DC motor with a gear train.",
+                        text: "Developed a proportional control algorithm where larger temperature deviations trigger larger valve adjustments, allowing the system to gradually converge on the target temperature. Integrated a portable charger for outlet-independent operation with easy recharging access.",
                         image: null,
                         label: null
                     },
                     {
-                        text: "Conducted tests by clamping the valve and ensuring proper height alignment for optimal performance.",
+                        text: "Resolved challenges including unidirectional motor movement (incomplete power connections) and conducted tests by clamping the valve and ensuring proper height alignment for optimal performance.",
                         image: null,
                         label: null
                     }
